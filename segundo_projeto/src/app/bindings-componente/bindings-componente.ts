@@ -10,21 +10,21 @@ import { Component } from '@angular/core';
 export class BindingsComponente {
 
   // Varialvel de Imagem
-dia:string = "BomDia.jpg";
-noite:string = "BoaNoite.jpg";
-madrugada:string = "Madrugada.jpg";
-tarde:string = "BoaTarde.jpg";
+imagem:string = "BomDia.jpg";
 
   //Função para alterar a imagem
 alterarImagem(){
-  if(this.dia === "BomDia.jpg"){
-    this.noite = "BoaNoite.jpg";
-  }else if(this.noite === "BoaNoite.jpg"){
-    this.dia = "BomDia.jpg";
-  }else if(this.madrugada === "Madrugada.jpg"){
-    this.tarde = "BoaTarde.jpg";
-  }else if(this.tarde === "BoaTarde.jpg"){
-    this.madrugada = "Madrugada.jpg";
+  if(this.imagem === "BomDia.jpg"){
+    this.imagem = "BoaTarde.jpg";
+  }
+  else if(this.imagem === "BoaTarde.jpg"){
+    this.imagem = 'BoaNoites.jpg';
+  }
+  else if(this.imagem === "BoaNoites.jpg"){
+    this.imagem = 'Madrugada.jpg';
+  }
+  else{
+    this.imagem = 'BomDia.jpg';
   }
 }
 }
