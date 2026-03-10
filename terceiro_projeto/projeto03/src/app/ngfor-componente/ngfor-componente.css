@@ -1,0 +1,17 @@
+.nome{
+    color: blue;
+    font-size: 20px;
+}
+.superHerois{
+    color: green;
+    font-size: 20px;
+}
+.vilao{
+    color: red;
+    font-size: 20px;
+}
+title{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
